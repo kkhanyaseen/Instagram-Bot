@@ -45,7 +45,7 @@ async def main():
 if Config.INSTA_SESSIONFILE_ID:
     bot.run(main())
 
-bot.run()
+bot.start()
 
 idle()
 bot.stop()
