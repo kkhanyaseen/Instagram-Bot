@@ -28,9 +28,9 @@ STATUS=Config.STATUS
 USER=Config.USER
 bot = Client(
     "InstaSessibon",
-    bot_token=Config.BOT_TOKEN,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
+    bot_token=Config.BOT_TOKEN,
     workers=50,
     plugins=dict(root="plugins")
     )
@@ -45,7 +45,7 @@ async def main():
 if Config.INSTA_SESSIONFILE_ID:
     bot.run(main())
 
-bot.start()
+bot.run()
 
 idle()
 bot.stop()
